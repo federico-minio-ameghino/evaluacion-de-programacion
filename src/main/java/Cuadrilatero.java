@@ -17,4 +17,18 @@ public class Cuadrilatero {
         int ladoY = Math.abs(this.esquinaInferiorIzquierda.y - this.esquinaSuperiorDerecha.y);
         return ladoX * 2 + ladoY * 2;
     }
+
+    public int area() {
+        int LadoX = Math.abs(this.esquinaInferiorIzquierda.x - this.esquinaSuperiorDerecha.x);
+        int LadoY = Math.abs(this.esquinaInferiorIzquierda.y - this.esquinaSuperiorDerecha.y);
+        return LadoX * LadoY;
+
+    }
+
+
+    public void modificarTamañoDeVentana(Punto puntoAExtender) {
+        this.esquinaSuperiorDerecha=puntoAExtender;
+
+    }
+
 }
